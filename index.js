@@ -10,7 +10,7 @@ var options = {
 };
 
 // Create a server with a host, port, and options
-var server = Hapi.createServer('localhost', options);
+var server = Hapi.createServer('localhost', 9000, options);
 
 // Define the routes
 server.route({
