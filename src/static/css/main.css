@@ -122,29 +122,40 @@
 * Play
 */
 
-#play .saved-programs {
-}
-
 #play .saved-programs li {
-	display: inline-block;
-	float: left;
-	width: 25%;
-	padding: 5px;
-	height: 5em;
-}
-
-#play .saved-programs li a {
-	vertical-align: middle;
 	display: block;
+	float: left;
+	width: 23%;
+	margin: 1%;
+	padding: 10px;
+	height: 5em;
 	font-size: 1.1em;
 	background-color: #428bca;
 	border-radius: 2px;
-	padding: 0.5em;
 	color: white;
-	height: 100%;
 }
 
-#play .saved-programs li a:hover {
+#play .saved-programs li h3 {
+	margin-top: 0;
+	display: inline-block;
+	width: 80%;
+}
+
+#play .saved-programs-buttons {
+	float: right;
+	height: 100%;
+	width: 10%;
+}
+
+#play .saved-programs li .button-play, #play .saved-programs li .button-edit {
+	color: white;
+	font-size: 20px;
+}
+
+#play .saved-programs li .button-play:hover, #play .saved-programs li .button-edit:hover {
 	text-decoration: none;
-	background-color: black;
+}
+
+#play .saved-programs li .button-play {
+	margin-bottom: 15px;
 }

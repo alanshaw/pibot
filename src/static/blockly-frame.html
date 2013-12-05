@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="/blockly/blockly_compressed.js"></script>
     <script type="text/javascript" src="/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="/blockly/blocks/pibot.js"></script>
     <script type="text/javascript" src="/blockly/msg/js/en.js"></script>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/blockly.css" rel="stylesheet">
@@ -40,9 +39,32 @@
       <block type="text"></block>
       <block type="text_print"></block>
     </xml>
-    <div id="file-operations">
-      <input type="text" id="program-title" placeholder="Give this program a name...">
-      <a href="#" id="button-save" class="glyphicon glyphicon-floppy-disk"></a>
-    </div>
+
+    <div id="blockly-sidebar">
+      <div id="file-operations">
+        <input type="text" id="program-title" placeholder="Give this program a name...">
+        <a href="#" id="button-save" class="glyphicon glyphicon-floppy-disk"></a>
+      </div>
+
+      <div id="load-program" class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Load a program... <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Do the Macarena</a></li>
+          <li><a href="#">Read Three Little Pigs</a></li>
+          <li><a href="#">Sing Daisy</a></li>
+          <li><a href="#">Follow a line</a></li>
+          <li><a href="#">Guard the door</a></li>
+          <li><a href="#">Sumo wrestling</a></li>
+        </ul>
+      </div>
+      </div>
   </body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/js/bootstrap.min.js"></script>
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
 </html>
