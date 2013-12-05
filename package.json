@@ -1,0 +1,20 @@
+{
+  "name": "pibot",
+  "version": "0.0.0",
+  "description": "prototype interface for PiBot",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "hapi": "~1.20.0"
+  },
+  "devDependencies": {
+    "assemble": "~0.4.31",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}
