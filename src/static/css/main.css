@@ -3,15 +3,20 @@
   src: url('/fonts/virgo.ttf') format('truetype');
 }
 
-.navbar-nav li {
-	color: black;
+.navbar {
+	border-bottom: 1px solid black;
+}
+
+.navbar-nav li.active a {
+	color: #428bca;
 }
 
 .navbar-nav li a {
 	display: block;
+	color: black;
 	position: relative;
 	padding: 0.5em;
-	margin: 10px 1em;
+	margin: 10px 1em 0;
 	overflow: visible;
 	font-size: 32px;
 }
@@ -20,16 +25,17 @@
 	display: block;
 }
 
-.navbar-nav li span.navlabel {
-	visibility: hidden;
-	font-family: 'Virgo';
-	text-align: center;
+.navbar-nav li span {
 	display: block;
+	text-align: center;
 }
 
-.navbar-nav li:hover span.navlabel {
-	visibility: visible;
+.navbar-nav li span.navlabel {
+	font-weight: bold;
+	margin-top: 0.5em;
+	font-size: 16px;
 }
+
 
 .navbar-brand {
 	background: url('/img/pibot-logo.png') center center no-repeat;
@@ -93,6 +99,10 @@
 	left: 200px;
 }
 
+/*
+* Program
+*/
+
 #blockly-frame {
 	position: relative;
 	height: 500px;
@@ -106,4 +116,35 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+/*
+* Play
+*/
+
+#play .saved-programs {
+}
+
+#play .saved-programs li {
+	display: inline-block;
+	float: left;
+	width: 25%;
+	padding: 5px;
+	height: 5em;
+}
+
+#play .saved-programs li a {
+	vertical-align: middle;
+	display: block;
+	font-size: 1.1em;
+	background-color: #428bca;
+	border-radius: 2px;
+	padding: 0.5em;
+	color: white;
+	height: 100%;
+}
+
+#play .saved-programs li a:hover {
+	text-decoration: none;
+	background-color: black;
 }
