@@ -1,0 +1,45 @@
+.splash-img {
+	width: 100%;
+	height: auto;
+}
+
+.splash-link {
+	display: block;
+	position: relative;
+	padding: 1em;
+	width: 150px;
+	height: 150px;
+	border: 5px solid black;
+	border-radius: 75px;
+	overflow: visible;
+	margin-bottom: 2.5em;
+}
+
+.splash-link span {
+	display: inline-block;
+	font-size: 70px;
+	line-height: 116px;
+	margin-left: 24px;
+}
+
+.splash-link h2 {
+	display: none;
+}
+
+.splash-link:hover {
+	text-decoration: none;
+	background: black;
+	color: white;
+}
+
+.splash-link:hover h2 {
+	z-index: 1;
+	margin: 0;
+	line-height: 150px;
+	width: 500px;
+	display: block;
+	position: absolute;
+	background-color: rgba(0,0,0,0.7);
+	top: 0;
+	left: 200px;
+}
