@@ -1,3 +1,13 @@
+.blocklySvg {
+	background-color: #262626 !important;
+	border: none !important;
+}
+
+.blocklyFlyoutBackground {
+	fill: #fff !important;
+	fill-opacity: 1 !important;
+}
+
 #blockly-sidebar {
 	position: fixed;
 	top: 0;
@@ -34,4 +44,8 @@
 
 #load-program {
 	margin-top: 5px;
+}
+
+.blocklyPathLight, .blocklyPathDark {
+	display: none;
 }

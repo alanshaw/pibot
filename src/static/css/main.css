@@ -3,26 +3,102 @@
   src: url('/fonts/virgo.ttf') format('truetype');
 }
 
+/*
+* Colours
+*/
+
+.pibot-red-bg {
+	background-color: #E74D4D;
+}
+
+.pibot-red {
+	color: #E74D4D;
+}
+
+.pibot-blue-bg {
+	background-color: #4D4FE7;
+}
+
+.pibot-blue {
+	color: #4D4FE7;
+}
+
+.pibot-purple-bg {
+	background-color: #8000FF;
+}
+
+.pibot-purple {
+	color: #8000FF;
+}
+
+.pibot-green-bg {
+	background-color: #7DE74D;
+}
+
+.pibot-green {
+	color: #7DE74D;
+}
+
+.pibot-neutral-bg {
+	background-color: #00FFBF;
+}
+
+.pibot-neutral {
+	color: #00FFBF;
+}
+
+.pibot-orange-bg {
+	background-color: #FFBF00;
+}
+
+.pibot-orange {
+	color: #FFBF00;
+}
+
+/*
+*	Global
+*/
+
+body {
+	color: white;
+	background-color: #262626;
+}
+
 .navbar {
-	border-bottom: 1px solid black;
+	margin-bottom: 0;
 }
 
 .navbar-nav li.active a {
-	color: #428bca;
+	border-bottom: 1px solid;
+	border-top: 1px solid;
 }
 
 .navbar-nav li a {
 	display: block;
-	color: black;
 	position: relative;
 	padding: 0.5em;
+	width: 100px;
+	border-radius: 1px;
 	margin: 10px 1em 0;
 	overflow: visible;
 	font-size: 32px;
+	transition: background-color 0.15s linear,
+		color 0.15s linear;
 }
 
 .navbar-nav li a {
 	display: block;
+}
+
+.navbar-nav > li:not(.active) > a:hover, .navbar-nav > li:not(.active) > a:focus {
+	background-color: white;
+	color: black;
+}
+
+.navbar-nav > li.active > a:hover, .navbar-nav > li.active > a:focus {
+	background-color: transparent;
+	color: white;
+	cursor: default;
 }
 
 .navbar-nav li span {
@@ -36,22 +112,32 @@
 	font-size: 16px;
 }
 
-
-.navbar-brand {
-	background: url('/img/pibot-logo.png') center center no-repeat;
+.navbar > .container .navbar-brand {
+	background: url('/img/pibot-logo-white.png') center center no-repeat;
 	background-size: 80% auto;
 	text-align: left;
 	text-indent: -9999px;
 	display: block;
 	position: relative;
 	margin: 10px 0;
-	padding: 1em;
-	width: 75px;
-	height: 75px;
-	border: 2px solid black;
+	padding: 1px;
+	width: 100px;
+	height: 100px;
+	border: 2px solid white;
 	border-radius: 50px;
 	overflow: visible;
+	transition: background-color 0.15s linear;
 }
+
+.navbar > .container .navbar-brand:hover {
+	background: url('/img/pibot-logo-black.png') center center no-repeat;
+	background-color: white;
+	background-size: 80% auto;
+}
+
+/*
+*	Home
+*/
 
 .splash-img {
 	width: 100%;
@@ -60,14 +146,15 @@
 
 .splash-link {
 	display: block;
+	color: black;
 	position: relative;
 	padding: 1em;
-	width: 150px;
-	height: 150px;
-	border: 5px solid black;
-	border-radius: 75px;
+	width: 100%;
+	border-radius: 1px;
 	overflow: visible;
 	margin-bottom: 2.5em;
+	transition: background-color 0.15s linear,
+		color 0.15s linear;
 }
 
 .splash-link span {
@@ -77,26 +164,17 @@
 	margin-left: 24px;
 }
 
-.splash-link h2 {
-	display: none;
-}
-
 .splash-link:hover {
 	text-decoration: none;
 	background: black;
 	color: white;
 }
 
-.splash-link:hover h2 {
-	z-index: 1;
-	margin: 0;
-	line-height: 150px;
-	width: 500px;
-	display: block;
+.splash-link h2 {
 	position: absolute;
-	background-color: rgba(0,0,0,0.7);
-	top: 0;
-	left: 200px;
+	margin: 0;
+	bottom: 20px;
+	right: 20px;
 }
 
 /*
@@ -106,10 +184,12 @@
 #blockly-frame {
 	position: relative;
 	height: 500px;
+	border: 1px solid #7DE74D;
 }
 
 #blockly-frame iframe {
 	position: absolute;
+	border: none;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -125,14 +205,27 @@
 #play .saved-programs li {
 	display: block;
 	float: left;
-	width: 23%;
-	margin: 1%;
+	width: 24%;
+	margin: 10px 1.25%;
 	padding: 10px;
-	height: 5em;
+	height: 9em;
 	font-size: 1.1em;
-	background-color: #428bca;
-	border-radius: 2px;
 	color: white;
+	border: 1px solid #4D4FE7;
+	border-radius: 2px;
+	transition: background-color 0.15s linear;
+}
+
+#play .saved-programs li:nth-child(4n+4) {
+	margin-right: 0;
+}
+
+#play .saved-programs li:nth-child(1n+1) {
+	margin-left: 0;
+}
+
+#play .saved-programs li:hover {
+	background-color: #4D4FE7;
 }
 
 #play .saved-programs li h3 {
