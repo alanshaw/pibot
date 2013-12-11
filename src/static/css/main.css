@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Virgo';
-  src: url('/fonts/virgo.ttf') format('truetype');
+  src: url('../fonts/virgo.ttf') format('truetype');
 }
 
 /*
@@ -113,7 +113,7 @@ body {
 }
 
 .navbar > .container .navbar-brand {
-	background: url('/img/pibot-logo-white.png') center center no-repeat;
+	background: url('../img/pibot-logo-white.png') center center no-repeat;
 	background-size: 80% auto;
 	text-align: left;
 	text-indent: -9999px;
@@ -130,7 +130,7 @@ body {
 }
 
 .navbar > .container .navbar-brand:hover {
-	background: url('/img/pibot-logo-black.png') center center no-repeat;
+	background: url('../img/pibot-logo-black.png') center center no-repeat;
 	background-color: white;
 	background-size: 80% auto;
 }
