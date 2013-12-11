@@ -9,9 +9,19 @@ $(document).ready(function() {
 		});
 	});
 
-	$('#blockly-frame').height($(window).height() - $('#blockly-frame').offset().top - 10);
-
-	$(window).resize(function() {
+	if ($('#blockly-frame').size() > 0) {
 		$('#blockly-frame').height($(window).height() - $('#blockly-frame').offset().top - 10);
-	});
+
+		$(window).resize(function() {
+			$('#blockly-frame').height($(window).height() - $('#blockly-frame').offset().top - 10);
+		});
+	}
+
+	if ($('#remote-control').size() > 0) {
+		$('#remote-control').height($(window).height() - $('#remote-control').offset().top - 10);
+
+		$(window).resize(function() {
+			$('#remote-control').height($(window).height() - $('#remote-control').offset().top - 10);
+		});
+	}
 });

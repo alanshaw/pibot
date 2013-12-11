@@ -252,3 +252,13 @@ body {
 #play .saved-programs li .button-play {
 	margin-bottom: 15px;
 }
+
+/*
+*	Remote control
+*/
+
+#remote-control {
+	display: block;
+	width: 100%;
+	height: 200px;
+}
