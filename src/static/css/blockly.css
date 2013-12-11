@@ -21,11 +21,11 @@
 }
 
 #button-save {
-	display: inline-block;
+	color: white;
 	float: right;
 	width: 40px;
-	font-size: 32px;
-	line-height: 40px;
+	font-size: 40px;
+	line-height: 45px;
 }
 
 #button-save:hover {

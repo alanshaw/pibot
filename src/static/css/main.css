@@ -65,7 +65,7 @@ body {
 }
 
 .navbar {
-	margin-bottom: 0;
+	margin: 20px 0;
 }
 
 .navbar-nav li.active a {
@@ -101,12 +101,12 @@ body {
 	cursor: default;
 }
 
-.navbar-nav li span {
+.navbar-nav li span, .navbar-nav li i {
 	display: block;
 	text-align: center;
 }
 
-.navbar-nav li span.navlabel {
+.navbar-nav li span {
 	font-weight: bold;
 	margin-top: 0.5em;
 	font-size: 16px;
@@ -157,7 +157,7 @@ body {
 		color 0.15s linear;
 }
 
-.splash-link span {
+.splash-link i {
 	display: inline-block;
 	font-size: 70px;
 	line-height: 116px;
